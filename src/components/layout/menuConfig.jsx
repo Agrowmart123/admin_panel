@@ -14,11 +14,16 @@ import {
   FaImages,
   FaFilePdf,
 } from "react-icons/fa";
-import { FaOpencart, FaLeaf } from "react-icons/fa6";
+import { FaOpencart, FaLeaf, FaSeedling } from "react-icons/fa6"; // Added FaSeedling/FaLeaf
 import { BiCategory } from "react-icons/bi";
 import { IoPricetagOutline, IoSettings } from "react-icons/io5";
 import { CgWebsite } from "react-icons/cg";
-import { GiPlantRoots, GiPlantWatering, GiWheat } from "react-icons/gi";
+import {
+  GiPlantRoots,
+  GiPlantWatering,
+  GiWheat,
+  GiFarmer,
+} from "react-icons/gi"; // Added GiFarmer
 import {
   MdSupportAgent,
   MdPayment,
@@ -46,6 +51,7 @@ export const menuConfig = [
     subItems: [
       { label: "Customers", path: "/customers", icon: FaUserFriends },
       { label: "Sellers", path: "/sellers", icon: MdStore },
+      { label: "Farmers", path: "/farmers", icon: GiFarmer }, // Added Farmers here
       { label: "Delivery Partners", path: "/delivery", icon: FaTruck },
     ],
   },
@@ -63,6 +69,13 @@ export const menuConfig = [
     label: "Agri Products",
     path: "/agri-products",
     icon: GiWheat,
+  },
+
+  // Added Farmer Products here
+  {
+    label: "Farmer Products",
+    path: "/farmer-products",
+    icon: FaLeaf,
   },
 
   {
@@ -98,7 +111,7 @@ export const menuConfig = [
     ],
   },
   { label: "Offers", path: "/offers", icon: IoPricetagOutline },
-   {
+  {
     label: "Catalogues",
     path: "/catalogues",
     icon: FaFilePdf,
