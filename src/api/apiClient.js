@@ -2,7 +2,7 @@ import axios from "axios";
 import { getAuthToken, logout, refreshAccessToken } from "./authService";
 
 // ✅ Hardcoded backend URL
-const API_BASE_URL = "http://api.agrowmartindia.com/api"; // ← your Spring Boot API
+const API_BASE_URL = "https://api.agrowmartindia.com/api"; // ← your Spring Boot API
 
 const api = axios.create({
   baseURL: API_BASE_URL,
